@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/joueur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joueur 1 (rouge) :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/joueur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joueur 2 (jaune) :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <EditText
+        android:id="@+id/nomJoueur1"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Entrez votre nom"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/joueur2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joueur1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/nomJoueur2"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Entrez votre nom"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joueur2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btjouer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="navigationToNameActivity"
+        android:text="Jouer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomJoueur2"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="432dp"
+        android:layout_height="241dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logop33" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

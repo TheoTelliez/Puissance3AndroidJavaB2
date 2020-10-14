@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameActivity">
+
+    <TextView
+        android:id="@+id/textViewJoueurUn"
+        android:layout_width="159dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="164dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nomJoueurEnCours"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/textViewJoueurDeux"
+        android:layout_width="159dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="77dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nomJoueurEnCours"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bravo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/bravo" />
+
+    <TextView
+        android:id="@+id/nomJoueurEnCours"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="21dp"
+        android:text="Au tour de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/quiWin"
+        android:layout_width="256dp"
+        android:layout_height="19dp"
+        android:text="Le joueur qui remporte la partie est :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66999996" />
+
+    <TextView
+        android:id="@+id/joueurGagnant"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:autoText="false"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66999996" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="401dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="202dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/L1C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton1"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L1C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton2"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L1C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton3"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L1C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton4"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L1C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton5"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/L2C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton1"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L2C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton2"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L2C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton3"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L2C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton4"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L2C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton5"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/L3C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton1"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L3C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton2"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L3C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton3"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L3C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton4"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L3C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton5"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/L4C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton1"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L4C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton2"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L4C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton3"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L4C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton4"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L4C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton5"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/L5C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton1"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L5C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton2"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L5C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton3"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L5C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton4"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+            <ImageView
+                android:id="@+id/L5C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bouton5"
+                app:srcCompat="@drawable/cellvide"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="302dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="bouton1"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="bouton2"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="bouton3"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="bouton4"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="bouton5"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/btmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="navigationToMainActivity"
+        android:text="Retour au menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomJoueur2"
+        app:layout_constraintVertical_bias="0.545" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
